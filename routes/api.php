@@ -12,6 +12,8 @@ Route::get('/books', [BookController::class, 'index']);
 Route::get('/books/{$id}', [BookController::class, 'show']);
 Route::post('/users', [UserController::class, 'store']);
 Route::post('/books', [BookController::class, 'store']);
-Route::post('/borrow', [BorrowController::class, 'store']);
+Route::post('/borrow', [BorrowController::class, 'borrow_book']);
+Route::post('/return', [BorrowController::class, 'return_book']);
+
 
 
