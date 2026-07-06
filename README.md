@@ -65,7 +65,7 @@ docker compose exec laravel.test php artisan migrate
 
 ## API Base URL
 ```bash 
-http://127.0.0.1:8080/api
+http://127.0.0.1/api
 ```
 ---
 
